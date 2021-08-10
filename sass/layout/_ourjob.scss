@@ -31,6 +31,7 @@
   }
 
   .ourjob__list_item-text {
+    @include font(14px, 700, 16px);
     position: absolute;
     padding-top: 27px;
     padding-bottom: 27px;
