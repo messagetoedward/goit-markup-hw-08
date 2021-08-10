@@ -77,20 +77,21 @@ body {
 }
 
 .conteiner {
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
 
 @media screen and (min-width: 480px) {
   .conteiner {
-    width: 450px;
+    width: 480px;
     margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   .conteiner {
-    width: 738px;
+    width: 768px;
   }
 }
 
@@ -766,6 +767,10 @@ body {
   }
 }
 
+.features__list:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .features__title {
   margin-bottom: 10px;
   font-weight: 700;
@@ -806,6 +811,7 @@ body {
   }
   .features__list {
     flex-basis: calc((100% - 60px) / 2);
+    margin-bottom: unset;
     margin-left: 30px;
     margin-top: 30px;
   }
@@ -820,6 +826,7 @@ body {
     margin-left: -30px;
   }
   .features__list {
+    margin-bottom: unset;
     flex-basis: calc((100% - 120px) / 4);
     margin-top: 30px;
     margin-left: 30px;

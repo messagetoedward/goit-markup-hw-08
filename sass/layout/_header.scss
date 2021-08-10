@@ -1,6 +1,14 @@
 .header {
   border-bottom: 1px solid #ececec;
   background-color: #ffffff;
+
+  // &::after {
+  //   position: absolute;
+  //   content: "";
+  //   height: 4px;
+  //   background-color: yellow;
+  //   width: 100vw;
+  // }
 }
 
 .header__conteiner {
