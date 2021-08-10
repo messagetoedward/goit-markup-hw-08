@@ -682,6 +682,11 @@ body {
   .header__menu_item:not(:last-child) {
     margin-right: 50px;
   }
+  .header__conteiner {
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
   .header__address {
     display: flex;
   }
