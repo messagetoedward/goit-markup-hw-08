@@ -919,6 +919,9 @@ body {
     margin-left: 30px;
     margin-top: 30px;
   }
+  .features__title {
+    text-align: unset;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -931,6 +934,9 @@ body {
         flex-basis: calc((100% - 120px) / 4);
     margin-top: 30px;
     margin-left: 30px;
+  }
+  .features__title {
+    text-align: unset;
   }
 }
 
