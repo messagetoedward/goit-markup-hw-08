@@ -1,0 +1,45 @@
+@media screen and (max-width: 1199px) {
+  .ourjob__section {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .ourjob__section {
+    padding-bottom: 94px;
+  }
+
+  .ourjob__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .ourjob__list {
+    display: flex;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+
+  .ourjob__list_item {
+    flex-basis: calc((100% - 90px) / 3);
+    margin-top: 30px;
+    margin-left: 30px;
+    position: relative;
+  }
+
+  .ourjob__list_item-text {
+    position: absolute;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: rgba(47, 48, 58, 0.8);
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}

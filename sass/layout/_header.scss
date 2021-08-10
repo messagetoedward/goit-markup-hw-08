@@ -1,0 +1,131 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  background-color: #ffffff;
+}
+
+.header__conteiner {
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .header__conteiner {
+    display: flex;
+  }
+  .header__menu,
+  .header__address {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // .header__logo {
+  //   margin-right: 88px;
+  // }
+  .header__menu {
+    display: flex;
+    &_item:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  .header__conteiner {
+    width: 100%;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  .header__menu_link {
+    display: flex;
+    position: relative;
+    @include font(14px, 500, 16px);
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+    text-decoration: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      background-color: transparent;
+      border-radius: 2px;
+      bottom: -36px;
+
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      &::after {
+        background-color: var(--accent-color);
+      }
+    }
+  }
+
+  .header__address_link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--nav-address-color);
+    text-decoration: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  .header__address_list {
+    margin-bottom: 10px;
+  }
+
+  .header__address_icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    fill: currentColor;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
+  }
+  .header__menu {
+    display: flex;
+
+    &_item {
+      position: relative;
+
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+    }
+  }
+
+  .header__address {
+    display: flex;
+  }
+  .header__address_list {
+    margin-right: 30px;
+    margin-bottom: 0px;
+  }
+
+  .header__menu_link::after {
+    bottom: -28px;
+  }
+}

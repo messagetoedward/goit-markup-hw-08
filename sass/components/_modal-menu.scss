@@ -1,0 +1,140 @@
+.burger-btn {
+  background-color: unset;
+  border: unset;
+  padding: unset;
+  line-height: 0;
+  fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: var(--accent-color);
+    cursor: pointer;
+  }
+  &__icon {
+    width: 24px;
+    height: 16px;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 205ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__conteiner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 48px;
+    padding-left: 25px;
+  }
+  &__close-button {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    fill: currentColor;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__close-button:hover {
+    fill: var(--accent-color);
+    cursor: pointer;
+  }
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.close-btn {
+  position: absolute;
+  background-color: unset;
+  border: unset;
+  padding: unset;
+  line-height: 0;
+  width: 40px;
+  height: 40px;
+}
+.close-icon {
+  width: 17px;
+  height: 17px;
+}
+
+.nav-menu {
+  margin-bottom: auto;
+  &__item {
+    font-family: var(--main-font);
+    @include font(40px, 500, 47px);
+  }
+  &__link {
+    color: var(--main-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  &__link:hover {
+    color: var(--accent-color);
+  }
+}
+
+.nav-address {
+  &__tel {
+    font-family: var(--main-font);
+    @include font(32px, 500, 40px);
+    margin-bottom: 32px;
+  }
+  &__tel-link {
+    color: var(--accent-color);
+  }
+  &__mail {
+    font-family: var(--main-font);
+    @include font(24px, 500, 28px);
+    margin-bottom: 64px;
+  }
+  &__mail-link {
+    color: var(--features-text-team-position-portfolio-projects-text);
+  }
+}
+
+.nav-social {
+  display: flex;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+  &__item {
+    font-family: var(--main-font);
+    @include font(18px, 500, 22px);
+  }
+  &__link {
+    color: var(--accent-color);
+  }
+
+  &__item:not(:last-child)::after {
+    margin-left: 10px;
+    margin-right: 10px;
+    content: "";
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .burger-btn {
+    display: none;
+  }
+}

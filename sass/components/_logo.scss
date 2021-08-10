@@ -1,0 +1,41 @@
+// Logo Header
+
+.header__logo_p1 {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+
+.header__logo_p2 {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--logo-p2-header-color);
+}
+
+// END Logo Header
+
+// Logo footer
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.logo-p1-footer {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+
+.logo-p2-footer {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--logo-p2-footer-color);
+}

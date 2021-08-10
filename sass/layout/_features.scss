@@ -1,0 +1,70 @@
+.features {
+  &__content {
+    // display: flex;
+    // margin-top: -30px;
+    // margin-left: -30px;
+  }
+
+  &__list {
+    // flex-basis: calc((100% - 120px) / 4);
+    // margin-top: 30px;
+    // margin-left: 30px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--features-text-team-position-portfolio-projects-text);
+  }
+
+  &__icon {
+    width: 70px;
+    height: 70px;
+
+    &_conteiner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+      border-radius: 4px;
+      height: 120px;
+      background: #f5f4fa;
+      border-radius: 4px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features__content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .features__list {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features__content {
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .features__list {
+    flex-basis: calc((100% - 120px) / 4);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}
