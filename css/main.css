@@ -988,7 +988,7 @@ body {
 
 .clients-list {
   margin-top: 30px;
-  margin-left: 15px;
+  margin-left: 30px;
   flex-basis: calc((100% - 60px) / 2);
 }
 
@@ -1012,16 +1012,7 @@ body {
   fill: currentColor;
 }
 
-@media screen and (max-width: 767px) {
-  .clients-content {
-    justify-content: flex-end;
-  }
-}
-
 @media screen and (min-width: 768px) {
-  .clients-link {
-    width: 216px;
-  }
   .clients-list {
     margin-top: 30px;
     margin-left: 30px;
@@ -1032,9 +1023,6 @@ body {
 @media screen and (min-width: 1200px) {
   .clients-list {
     flex-basis: calc((100% - 180px) / 6);
-  }
-  .clients-link {
-    width: 170px;
   }
 }
 
