@@ -586,7 +586,6 @@ body {
 
 .header {
   border-bottom: 1px solid #ececec;
-  background-color: #ffffff;
 }
 
 .header__conteiner {
@@ -619,7 +618,6 @@ body {
     margin-right: 50px;
   }
   .header__conteiner {
-    width: 100%;
     padding-top: 21px;
     padding-bottom: 21px;
   }
@@ -684,7 +682,6 @@ body {
     margin-right: 50px;
   }
   .header__conteiner {
-    width: 100%;
     padding-top: 25px;
     padding-bottom: 25px;
   }
@@ -938,12 +935,12 @@ body {
   .ourteam-content {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -15px;
+    margin-top: -30px;
     margin-left: -30px;
   }
   .ourteam-list {
-    margin-top: 15px;
-    margin-left: 15px;
+    margin-top: 30px;
+    margin-left: 30px;
   }
   .img-ourteam {
     width: unset;
